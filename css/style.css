@@ -1,0 +1,225 @@
+.nav_header{
+    display: flex; /*hacer flexible la cabecera*/
+    justify-content: space-between;/*justificar para que se genere espacio entre los elementos pero no a los extremos*/
+    align-items: center;/*alinearlos al centro de cada espacio*/
+}
+
+.nav_header{
+    background-color: rgb(13, 227, 255);/*color de fondo*/
+    position: fixed;/*sobreponderlo sobre todo, extraerlo de la estructura*/
+    top: 0;/*fijarlo en la parte superior, top 0*/
+    height: 70px; /*altura del nav que se utilizara*/
+    width: 100%; /*ancho del nav, recomendable 100%*/
+    padding: 0 25px; /*margin interno arriba y abajo 0px, derecha e izquierda 25px*/
+}
+.a_logo{
+    background: url(../img/icono.png);/*colocar una imagen de fondo en un elemento a*/
+    padding: 25px 25px; /*como el boton esta vacio le da un margen interno de 15px a cada lado desde el centro*/
+    background-size: 50px; /*tamaño de la imagen*/
+    background-repeat: no-repeat; /*no repetir la imager*/
+    background-position: center; /*ubicar en el centro*/
+}
+.div_buscar_encabezado{
+    display: flex;/*hacer fexible el contenedor padre*/
+    align-items: center;/*alinear todos los hijos al centro*/
+
+}
+.buscar_texto{
+    width: 260px;/*ancho de del input*/
+    height: 41px;/*alto del input*/
+    border: 1px solid rgb(211, 211, 211);/*colocarle grosor, tipo y color del borde*/
+    font-size: 16px;/*tamaño del texto*/
+    padding: 3px 8px;/*margen interno de alto 3px y lalteral 8px*/
+    color: #070e79;/*color del texto dentro del input*/
+    border-radius: 15px 0 0 15px;/*redondear las esquinas inicia sup.izq - sup.der - inf.der - inf.izq*/
+    outline: none;/*no mostrar el marco dentro del buscador al pasar el mouse*/
+}
+.boton_buscar{
+    background-image: url(../img/search.png);/*colocar una imagen de fondo en el boton*/
+    background-repeat: no-repeat;/*no permitir que se repita el fondo*/
+    background-position: center;/*centrar el fondo*/
+    border: 1px solid rgb(211, 211, 211);/*colocarle grosor, tipo y color del borde*/
+    background-color: #F9F9F9;/*color de fondo del boton*/
+    border-left: none;/*anular el borde de la izquierda*/
+    padding: 20px 20px;/*como el boton esta vacio le da un margen interno de 15px a cada lado desde el centro*/
+    cursor: pointer;/*cambia el puntero al estar sobre el boton*/
+}
+.div_encabezado_2{
+    padding: 0 45px 0 0 ;
+}
+
+.titulo__central{
+    font-size: 50px;
+    padding: 100px 20px 10px 20px;
+    text-align: center;
+}
+.contenedor_card{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 20px 20px 10px 20px;
+    margin-bottom: 50px;
+    align-items: center;
+}
+
+.cards__item{
+    flex-grow: 1;
+    height: 303px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: aquamarine;
+    border-radius: 15px;
+    border: 3px solid #000000;
+}
+
+.img__item{
+    height: 220px;
+    width: 220px;
+    margin: 10px 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.descripcion_card{
+    padding: 0 10px;
+    width: 90%;
+}
+
+.nombre__card{
+    text-align: center;
+    padding: 0 0 8px 0;
+    font-size: large;
+}
+.sub_descripcion_card{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: smaller;
+    font-weight: 800;
+    gap: 5px;
+}
+.poder_card{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.eliminar__card{
+    background: url(../img/delete.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 15px 15px;
+    background-size: 30px;
+    cursor: pointer;
+    transition: transform 0.3s;/*tiempo que dura la transformacion*/
+}
+.eliminar__card:hover{
+    transform: translateY(-5px) scale(1.5); /*transformar, elevando 3px y zoom al 1.5*/
+}
+
+.boton_flotante{
+    position: fixed;
+    bottom: 50px;
+    right: -1px;
+    font-size: xx-large;
+    background-color: #00e1ff;
+    width: 50px;
+    height: 45px;
+    border-radius: 15px 0 0 15px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.boton_flotante:hover{
+    background-color: red;
+    transform: translateY(-3px);
+}
+
+.agregar__card{
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.95);
+    justify-content: center;
+    opacity: 0.5;
+    transform: opacity 1s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.agregar__card__int{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    border-radius: 50px;
+}
+
+.agregar__card.active{
+    visibility: visible;
+    opacity: 1;
+}
+
+.agregar__card__int{
+    background-color: #ac4848;
+}
+
+.agregar__card__int h2{
+    font-size: 35px;
+    font-weight: 800;
+    padding-bottom:35px;
+}
+
+.agregar__card__int input{
+    width: 450px;/*ancho de del input*/
+    height: 32px;/*alto del input*/
+    border: 1px solid rgb(211, 211, 211);/*colocarle grosor, tipo y color del borde*/
+    font-size: large;/*tamaño del texto*/
+    padding: 10px 15px;/*margen interno de alto 3px y lalteral 8px*/
+    outline: none;
+    margin-bottom: 15px; /*espacio hacia abajo de 15px*/
+    border-radius: 25px; /*redondear el borde en 25px*/
+}
+.boton__n2{
+    height: 50px;
+    width: 180px;
+    border: 3px solid #070e79;
+    color: #070e79;
+    font-weight: 700;
+    border-radius: 25px;
+}
+
+.footer{
+    background: #070e79;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    color: white;
+}
+
+
+@media (max-width: 834px){
+    .agregar__card__int{
+        padding: 50px 20px;
+    }
+    .agregar__card__int input{
+        width: 250px;
+    }
+    .agregar__card__int h2{
+        font-size: 30px;
+    }
+    .boton__n2{
+        width: 120px;
+    }
+}

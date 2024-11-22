@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALURAWEEK</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/reset.css">
+</head>
+<body>
+    <header>
+        <nav class="nav_header">
+            <a class="a_logo" href=""></a>
+            <div class="div_buscar_encabezado">
+                <input type="search" name="buscar_texto" class="buscar_texto" id="buscar" placeholder="buscar card" data-busqueda>
+                <button class="boton_buscar" data-boton-buscar></button>
+            </div>
+            <div class="div_encabezado_2"> CARD'S 2024 </div>
+        </nav>
+    </header>
+
+    <div class="titulo__central" >
+        <h1>CARD'S DE ANIMES 2024</h1>
+    </div>
+
+    <ul class="contenedor_card" alt="cards 2024" data-lista>
+    <!--
+        <li class="cards__item" >
+            <div class="img__item" style='background-image: 
+            url("https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2021/12/naruto-itachi-uchiha-2561211.jpg");''></div>
+            <div class="descripcion_card">
+                <h3 class="nombre__card">TOM MISAKI</h3>
+                <div class="sub_descripcion_card">
+                    <div class="poder_card">
+                        <p>CAPITAN TSUBASA</p>
+                        <p>15 000pts</p>
+                    </div>
+                    <button class="eliminar__card" id="eliminarsss"></button>
+                </div>
+            </div>
+        </li>
+        <li class="cards__item">
+            <img class="img__item" src="./img/icono.png" alt="">
+            <div class="descripcion_card">
+                <h3 class="nombre__card">GOGETA</h3>
+                <div class="sub_descripcion_card">
+                    <div class="poder_card">
+                        <p>DRAGON BALL SUPER</p>
+                        <p>650 000pts</p>
+                    </div>
+                    <button class="eliminar__card"></button>
+                </div>
+            </div>
+        </li>
+        <li class="cards__item">
+            <img class="img__item" src="./img/icono.png" alt="">
+            <div class="descripcion_card">
+                <h3 class="nombre__card">SASUKE UCHIHA</h3>
+                <div class="sub_descripcion_card">
+                    <div class="poder_card">
+                        <p>NARUTO SHIPUDEN</p>
+                        <p>500 000pts</p>
+                    </div>
+                    <button class="eliminar__card"></button>
+                </div>
+            </div>
+        </li>
+        <li class="cards__item">
+            <img class="img__item" src="./img/icono.png" alt="">
+            <div class="descripcion_card">
+                <h3 class="nombre__card">ITADORI</h3>
+                <div class="sub_descripcion_card">
+                    <div class="poder_card">
+                        <p>JUJUTSU KAISEN</p>
+                        <p>450 000pts</p>
+                    </div>
+                    <button class="eliminar__card"></button>
+                </div>
+            </div>
+        </li>
+        <li class="cards__item">
+            <img class="img__item" src="./img/icono.png" alt="">
+            <div class="descripcion_card">
+                <h3 class="nombre__card">ITADORI</h3>
+                <div class="sub_descripcion_card">
+                    <div class="poder_card">
+                        <p>JUJUTSU KAISEN</p>
+                        <p>450 000pts</p>
+                    </div>
+                    <button class="eliminar__card"></button>
+                </div>
+            </div>
+        </li>
+        <li class="cards__item">
+            <img class="img__item" src="./img/icono.png" alt="">
+            <div class="descripcion_card">
+                <h3 class="nombre__card">ITADORI</h3>
+                <div class="sub_descripcion_card">
+                    <div class="poder_card">
+                        <p>JUJUTSU KAISEN</p>
+                        <p>450 000pts</p>
+                    </div>
+                    <button class="eliminar__card"></button>
+                </div>
+            </div>
+        </li>
+    -->
+    </ul>
+
+
+    <button class="boton_flotante" onclick="document.querySelector('.agregar__card').classList.add('active')">+</button>
+
+    <form class="agregar__card" data-formulario>
+        <div class="agregar__card__int">
+        <h2>AGREGAR CARD NUEVO</h2>
+        <input type="text" class="agregar__nombre__card" required placeholder="Ingresa nombre del personaje" data-personaje>
+        <input type="text" class="agregar__anime__card" required placeholder="Ingresa anime al que pertenece" data-anime>
+        <input type="text" class="agregar__puntos__card" required placeholder="Ingresa puntos del personje" data-poder>
+        <input type="text" class="agregar__imagen__card" required placeholder="Ingresa url de la imagen" data-imagen>
+        <div class="botones__agregar__card">
+            <button class="boton__n2" type="submit">AGREGAR</button>
+            <button class="boton__n2" onclick="document.querySelector('.agregar__card').classList.remove('active')">CANCELAR</button>
+        </div>
+        </div>
+    </form>
+
+    <script src="./js/mostrarCards.js" type="module"></script>
+    <script src="./js/agregarCards.js" type="module"></script>
+    <script src="./js/buscarCards.js" type="module"></script>
+    <script src="./js/eliminarCards.js" type="module"></script>
+    <footer>
+        <div class="footer">--------------iuxon-----------</div>
+    </footer>
+</body>
+</html>

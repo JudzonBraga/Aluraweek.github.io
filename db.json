@@ -1,0 +1,67 @@
+{
+  "cards": [
+    {
+      "id": "1",
+      "imagen": "https://lensmate.co.uk/cdn/shop/files/YujiItadori.jpg",
+      "personaje": "ITADORI",
+      "anime": "JUJUTSU KAISEN",
+      "poder": "350 000"
+    },
+    {
+      "id": "2",
+      "imagen": "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2021/12/naruto-itachi-uchiha-2561211.jpg",
+      "personaje": "ITACHI UCHIHA",
+      "anime": "NARUTO SHIPPUDEN",
+      "poder": "550 000"
+    },
+    {
+      "id": "3",
+      "imagen": "https://s1.zerochan.net/Gogeta.600.3510870.jpg",
+      "personaje": "GOGETA",
+      "anime": "DRAGON BALL SUPER",
+      "poder": "450 000"
+    },
+    {
+      "id": "4",
+      "imagen": "https://go-jpan.mx/wp-content/uploads/2022/05/tom-misaki-300x300.jpg",
+      "personaje": "TOM MISAKI",
+      "anime": "CAPITAN TSUBASA",
+      "poder": "3 000"
+    },
+    {
+      "id": "5",
+      "imagen": "https://i0.wp.com/codigoespagueti.com/wp-content/uploads/2021/04/saitama-puede-ganar-vengadores-marvel.jpg",
+      "personaje": "SAITAMA",
+      "anime": "ONE PUCH MAN",
+      "poder": "800 000"
+    },
+    {
+      "id": "6",
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmvHheSLrEcPzniG5iC7EX71I1nuCxad1M5w&s",
+      "personaje": "ASH KEPCHUM",
+      "anime": "POKEMON",
+      "poder": "1 000"
+    },
+    {
+      "id": "8b30",
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuhnY-zdNqvH4p7HJA0AzpOiL2ubJw8k9OCg&s",
+      "personaje": "OHMA TOKITA",
+      "anime": "KENGAN ASHURA",
+      "poder": "400 000"
+    },
+    {
+      "id": "aa86",
+      "imagen": "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2016/01/551162-naruto-sus-spin-offs.jpg",
+      "personaje": "NARUTO UZUMAKI",
+      "anime": "NARUTO SHIPPUDEN",
+      "poder": "500 000"
+    },
+    {
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9e3xsLKxeaMvQPJ5hcMaK1dKAgrIGD8mE3Q&s",
+      "personaje": "OLIVA BISKUITT",
+      "anime": "BAKI",
+      "poder": "650 000",
+      "id": "WWM1T50"
+    }
+  ]
+}
